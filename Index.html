@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ahorcado One</title>
+    <link href="http://fonts.cdnfonts.com/css/sf-pixelate" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script type="text/javascript" src="palabras.js" defer></script>
+    <script type="text/javascript" src="script.js" defer></script>
+</head>    
+<body>
+    <h1>Ahorcado One</h1>
+    <img src="a.png">
+    <div>
+        <canvas id="canvas"></canvas>
+        <div id="usedLetters"></div>
+    </div>
+    <div id="wordContainer"></div>
+    <button id="startButton">START</button>
+    <h1 id="titulo">Agrega tu palabra</h1>
+    <!--<button>Agregar</button>
+    <a href="/Index.html"><button class="back">Volver</button></a>-->
+
+    <div id="toast-qr" class="toast">
+        <h6 id="mensaje">Max. 8 letras.</h6>
+        <input type="text" id="palabra" placeholder="Ingrese palabra">
+        <br>
+        <button class="save" onclick="capturar()" id="boton" type="reset">Guardar</button>   
+    </div>
+
+    <!--<a href="/index2.html"><button class="add" id="add2">Agregar Palabra</button></a>-->
+    
+</body>
+</html>
